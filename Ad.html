@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
-    <script type="text/javascript">
-    var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
-    googletag.cmd.push(function() {
-        var adSlot1 = googletag.defineSlot('7190/Cdiscount/informatique/listeprod/body', [300, 250], "banner1");
-        adSlot1.addService(googletag.pubads());
-        googletag.pubads().set('page_url', 'http://www.cdiscount.com/');
-        googletag.enableServices();
-    }, function() { googletag.display('banner1'); });
-
-    function refreshSlots(adSlot) {
-        googletag.cmd.push(function() {
-            googletag.pubads().refresh(adSlot, {
-                changeCorrelator: false
-            })
-        })
-    }
-
-    
-
-</script>
 </head>
 <body>
-    <div id="banner1"></div>
+    <script type="text/javascript">
+        var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+        googletag.cmd.push(function() {
+            var adSlot1 = googletag.defineSlot('7190/Cdiscount/informatique/listeprod/body', [300, 250], "banner1");
+            adSlot1.addService(googletag.pubads());
+            googletag.pubads().set('page_url', 'http://www.cdiscount.com/');
+            googletag.enableServices();
+        });
+        googletag.cmd.push(function() { googletag.display('banner1'); });
+    </script>
+    <div id="banner1" style="width:300px; height:250px;"></div>
+
 </body>
 </html>
